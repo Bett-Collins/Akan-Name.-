@@ -2,3 +2,18 @@ body{
     background-image: url(images/ghana3.jpg);
     background-size: cover;
 }
+.card  title {
+    margin-left: 200px;
+}
+.container {
+    border: solid none;
+    height: 680px;
+    width: 500px;
+    color: white;
+text-align: center;
+margin-left: 300px;
+box-shadow: 10px 20px 30px white ;
+font-style: italic;
+font-size: medium;
+background-color: orange;
+}
