@@ -3,8 +3,9 @@ body{
     background-size: cover;
 }
 .navbar h1 {
-   margin-left: 480px;
+   margin-left: 470px;
    box-shadow: 3px 6px 10px black;
+   color: white;
 }
 .container {
     border: solid none;

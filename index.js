@@ -32,3 +32,27 @@ function valiMonth() {
         alert("please enter month")
     }
 }
+function validYear() {
+    var Year = document.getElementById("Year").value;
+    if (Year) {
+        if ( Year >= 2021 && Year >= 1900) {
+            return fulse;
+        } else {
+            alert("year should be 1900-2021");
+        }
+    } else {
+        alert("please enter year")
+    }
+    function validGender() {
+        var gender = document.getElementById("Gender").value;
+        if (gender) {
+            if (gender == "male" || gender == "female") {
+                return gender;
+            } else {
+                alert("results should be  either male or female");
+            }
+        } else {
+            alert("please enter the gender")
+        }
+    }
+}
