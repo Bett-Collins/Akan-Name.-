@@ -24,11 +24,14 @@
             <p style="font-size: large;">Hello! This is a website application that takes your birthday information and determines the day of the week you were born, after which it generates your Akan Name based on your gender. Ghanian culture gave rise to Akan names.</p>
              <p style="font-size: large;">Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child’s name is determined by factors surrounding his or her birth.As a matter of fact, it is possible to tell what led to someone’s birth, the day they were born and their rank among the siblings just by their names. Read more.</p>
 
-             <form class="forms">
+             <form onSubmit ="handleForm(event)" id = "form">
                 <input type="number" id="Date" placeholder="DD" name="Date" ><br><br>
                 <input type="number" id="Month" placeholder="MM" name="Month" ><br><br>
-                 <input type="number" id="Year" placeholder="YYYY" name="Year" ><br><br>
-             </div>
+                <input type="number" id="Year" placeholder="YYYY" name="Year" ><br><br>
+           <input type= "submit" value="submit">
+            </form>
+ 
+            </div>
                 </form>
                 <div class="col-md-12">
            <div class id="mygender">    
@@ -38,9 +41,7 @@
            </div>
            
 
-           <div class="onclick">
-            <button onclick="OnSubmit()">Your Akan Name</button>
-        </div>
+          
                 </div>
             </div>
         </div>  

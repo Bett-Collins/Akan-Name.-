@@ -9,7 +9,7 @@ body{
 }
 .container {
     border: solid none;
-    height: 680px;
+    height: 700px;
    width: 600px;
    border-radius: 20px;
     color: white;
@@ -22,6 +22,6 @@ background-color: orange;
 }
 
 .onclick {
-    margin-top: 35px;
+    margin-top: 15px;
   border-radius: 15px;
 }
