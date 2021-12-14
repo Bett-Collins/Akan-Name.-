@@ -7,7 +7,7 @@ function onSubmit() {
     var akanName = determineName(GenderEntered, calculatedDay);
     document.getElementById("Display").innerHTML = "hi! Your Akan Name Is " + akanName;
   
-  };
+  }
   function validDate() {
     var date = document.getElementById("Date").value;
     if (date) {
@@ -43,6 +43,7 @@ function validYear() {
     } else {
         alert("please enter year")
     }
+}
     function validGender() {
         var gender = document.getElementById("Gender").value;
         if (gender) {
@@ -55,4 +56,13 @@ function validYear() {
             alert("please enter the gender")
         }
     }
-}
+
+
+
+Day of the week (d) = Math.floor( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+
+let daysOfWeek = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  let maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+  let femaleAkanNames = [ "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
