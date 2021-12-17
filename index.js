@@ -1,38 +1,36 @@
-         
-    function handleForm() {
-    var dateEntered = document.getElementById("Date").value;  
-    var monthEntered = document.getElementById("Month").value;  
-    var yearEntered = document.getElementById("Year").value;  
-    if (dateEntered == "" || dateEntered <= 0 || dateEntered >31 ) {
-        alert("enter correct date");
-        
+function akanName() {
+    //declaring variables
+    var date = document.getElementById("Date").value;
+    var month = document.getElementById("Month").value;
+    var year = document.getElementById("Year").value;
+
+    var male = document.getElementById("Male").checked;
+    var female = document.getElementById("Female").checked;
+
+    let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+    var birthDay = new Date(year + '-' + month + '-' + date);
+    var dayOfTheWeek = birthDay.getDay();
+
+
+    //Vadate date
+    if (date <= 0 || date > 31) {
+        alert("Enter the correct date");
+    } else if (month <= 0 || month > 12) {
+        alert("Enter the correct month")
+    } else if (year >= 2022) {
+        alert("Enter the correct year")
+
     }
 
-    else if (monthEntered == "" || monthEntered <=0 || monthEntered > 12 ) {
-        alert("enter correct month");
+
+    if (male === true) {
+        document.getElementById("Display").innerHTML = "Your day of birth is " + daysOfWeek[dayOfTheWeek] + " your Akan Name is " + maleNames[dayOfTheWeek];
+
+    } else if (female === true) {
+        document.getElementById("Display").innerHTML = "Your day of birth is " + daysOfWeek[dayOfTheWeek] + " your Akan Name is " + femaleNames[dayOfTheWeek];
     }
-else if (yearEntered =="" ) {
-    alert("enter year");
-    
-}
 
-else { 
-var calculateDayOfWeek = function(dateEntered,monthEntered,yearEntered){
-var dateEntered = document.getElementById("Date").value;  
-    var monthEntered = document.getElementById("Month").value;  
-    var yearEntered = docu.getElementById("Year").value;  
-    var year= parseInt(yearEntered.slice(-2));
-    var month =parseInt(monthEntered);
-    var date =parseInt(dateEntered);
-    var century =parseInt(yearEntered.slice(0,2));
-    var daysOfWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date )  %7
-    var day = Math.floor (daysOfWeek)
-    
-}
-alert (day);
-}
-calculateDayOfWeek();
-}
-
-    
-}
+};

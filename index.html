@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,49 @@
     <title>AKAN-NAMES</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
+</head>
 
-    
-    
-    
-    </head>
 <body>
     <div class="navbar">
         <h1>AKAN NAMES</h1>
     </div>
     <div class="container">
         <div class="row">
-    
+
             <div class="col-md-12">
-            <img src="images/ghana.jpg" height="150">
-            <p style="font-size: large;">Hello! This is a website application that takes your birthday information and determines the day of the week you were born, after which it generates your Akan Name based on your gender. Ghanian culture gave rise to Akan names.</p>
-             <p style="font-size: large;">Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child’s name is determined by factors surrounding his or her birth.As a matter of fact, it is possible to tell what led to someone’s birth, the day they were born and their rank among the siblings just by their names. Read more.</p>
+                <img src="images/ghana.jpg" height="110">
+                <p></p>Hello! This is a website application that takes your birthday information
+                    and determines the day of the week you were born, after which it generates your Akan Name based on
+                    your gender. Ghanian culture gave rise to Akan names.</p>
+                <p></p>Akan names come from a traditional naming system for people from countries
+                    such as Togo, Ivory Coast and Ghana. A child’s name is determined by factors surrounding his or her
+                    birth.As a matter of fact, it is possible to tell what led to someone’s birth, the day they were
+                    born and their rank among the siblings just by their names. Read more.</p>
 
-             <form onSubmit ="handleForm(event)" id = "form">
-                <input type="number" id="Date" placeholder="DD" name="Date" ><br><br>
-                <input type="number" id="Month" placeholder="MM" name="Month" ><br><br>
-                <input type="number" id="Year" placeholder="YYYY" name="Year" ><br><br>
-           <input type= "submit" value="submit">
-            </form>
- 
-            </div>
+                <form id="myForm">
+
+                    <input type="number" id="Date" placeholder="DD" label for Date><br><br>
+                    <input type="number" id="Month" placeholder="MM" label for Month><br><br>
+                    <input type="number" id="Year" placeholder="YYYY" label for year><br><br>
                 </form>
+            </div>
+            <div class="col-md-12">
                 <div class="col-md-12">
-           <div class id="mygender">    
-               <p>Select Gender</p> 
-                Male: <input type = "radio"name= "status">
-                Female: <input type = "radio" name="status">
-           </div>
-           
-
-          
+                    <div class id="mygender">
+                        <p>Male</p>
+                        <input type="radio" id="Male" name="status">
+                        <p>Female</p>
+                        <input type="radio" id="Female" name="status">
+                    </div>
+                    <div class="submit">
+                        <input type="button" id="submit" value="Submit" onclick="akanName(); return false">
+                    </div>
                 </div>
             </div>
-        </div>  
-        <p id="Display"></p>
-        <script src="js/index.js"></script>
+        </div><br>
+     <p id="Display"></p>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
-    
